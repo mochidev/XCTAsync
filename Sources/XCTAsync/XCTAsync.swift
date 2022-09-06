@@ -35,6 +35,7 @@ public func XCTAssertEqual<T>(
     try? { XCTAssertEqual(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -48,6 +49,7 @@ public func XCTAssertEqual<T>(
     try? { XCTAssertEqual(try expression1(), try expression2(), accuracy: accuracy, message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -61,6 +63,7 @@ public func XCTAssertEqual<T>(
     try? { XCTAssertEqual(try expression1(), try expression2(), accuracy: accuracy, message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertFalse(
     _ expression: @autoclosure () async throws -> Bool,
     _ message: @autoclosure () -> String = "",
@@ -71,6 +74,7 @@ public func XCTAssertFalse(
     try? { XCTAssertFalse(try expression(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertGreaterThan<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -83,6 +87,7 @@ public func XCTAssertGreaterThan<T>(
     try? { XCTAssertGreaterThan(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertGreaterThanOrEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -95,6 +100,7 @@ public func XCTAssertGreaterThanOrEqual<T>(
     try? { XCTAssertGreaterThanOrEqual(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertIdentical(
     _ expression1: @autoclosure () async throws -> AnyObject?,
     _ expression2: @autoclosure () async throws -> AnyObject?,
@@ -107,6 +113,7 @@ public func XCTAssertIdentical(
     try? { XCTAssertIdentical(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertLessThan<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -119,6 +126,7 @@ public func XCTAssertLessThan<T>(
     try? { XCTAssertLessThan(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertLessThanOrEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -131,6 +139,7 @@ public func XCTAssertLessThanOrEqual<T>(
     try? { XCTAssertLessThanOrEqual(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNil(
     _ expression: @autoclosure () async throws -> Any?,
     _ message: @autoclosure () -> String = "",
@@ -141,6 +150,7 @@ public func XCTAssertNil(
     try? { XCTAssertNil(try expression(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNoThrow<T>(
     _ expression: @autoclosure () async throws -> T,
     _ message: @autoclosure () -> String = "",
@@ -151,6 +161,7 @@ public func XCTAssertNoThrow<T>(
     try? { XCTAssertNoThrow(try expression(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNotEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -163,6 +174,7 @@ public func XCTAssertNotEqual<T>(
     try? { XCTAssertNotEqual(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNotEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -176,6 +188,7 @@ public func XCTAssertNotEqual<T>(
     try? { XCTAssertNotEqual(try expression1(), try expression2(), accuracy: accuracy, message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNotEqual<T>(
     _ expression1: @autoclosure () async throws -> T,
     _ expression2: @autoclosure () async throws -> T,
@@ -189,6 +202,7 @@ public func XCTAssertNotEqual<T>(
     try? { XCTAssertNotEqual(try expression1(), try expression2(), accuracy: accuracy, message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNotIdentical(
     _ expression1: @autoclosure () async throws -> AnyObject?,
     _ expression2: @autoclosure () async throws -> AnyObject?,
@@ -201,6 +215,7 @@ public func XCTAssertNotIdentical(
     try? { XCTAssertNotIdentical(try expression1(), try expression2(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertNotNil(
     _ expression: @autoclosure () async throws -> Any?,
     _ message: @autoclosure () -> String = "",
@@ -211,6 +226,7 @@ public func XCTAssertNotNil(
     try? { XCTAssertNotNil(try expression(), message(), file: file, line: line) }()
 }
 
+@inlinable
 public func XCTAssertThrowsError<T>(
     _ expression: @autoclosure () async throws -> T,
     _ message: @autoclosure () -> String = "",
@@ -222,6 +238,7 @@ public func XCTAssertThrowsError<T>(
     try? { XCTAssertThrowsError(try expression(), message(), file: file, line: line, errorHandler) }()
 }
 
+@inlinable
 public func XCTAssertTrue(
     _ expression: @autoclosure () async throws -> Bool,
     _ message: @autoclosure () -> String = "",
