@@ -9,10 +9,15 @@ class TestClass {
 func sync<T>(_ value: T) -> T { value }
 func syncThrows<T>(_ value: T) throws -> T { value }
 func syncThrowsError<T>(_ value: T) throws -> T { throw TestError() }
+
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 func async<T>(_ value: T) async -> T { value }
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 func asyncThrows<T>(_ value: T) async throws -> T { value }
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 func asyncThrowsError<T>(_ value: T) async throws -> T { throw TestError() }
 
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 final class XCTAsyncTests: XCTestCase {
     func testAsyncAssert() async throws {
         await XCTAssert(sync(true))
