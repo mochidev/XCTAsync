@@ -22,7 +22,7 @@ Please check the [releases](https://github.com/mochidev/XCTAsync/releases) for r
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mochidev/XCTAsync.git", .upToNextMinor(from: "1.0.0")),
+    .package(url: "https://github.com/mochidev/XCTAsync.git", .upToNextMajor(from: "1.0.0")),
 ],
 ...
 targets: [
